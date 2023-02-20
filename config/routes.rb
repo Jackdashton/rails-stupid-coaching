@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # Get localhost/3000/ask
+  # verb "url", to: "controller#action"
+  get '/ask', to: 'questions#question'
+  get '/answer', to: 'questions#answer'
 end
